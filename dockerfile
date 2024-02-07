@@ -1,8 +1,8 @@
-FROM nginx:latest
+ FROM nginx:latest
 
-COPY index.html /Users/34621/Desktop/Docker/html
-#COPY pio.png /Users/34621/Desktop/Docker/html
+ COPY index.html /usr/share/nginx/html
+ #COPY pio.png /usr/share/nginx/html
 
-EXPOSE 80 443     
+ EXPOSE 80 443     
 
-CMD ["nginx", "-g", "daemon off;"]
+ CMD ["nginx", "-g", "daemon off;"]
